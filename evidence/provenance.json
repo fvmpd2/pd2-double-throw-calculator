@@ -1,0 +1,156 @@
+{
+  "snapshot": "S14 launch, checked unchanged relevant tables in 28 October update",
+  "sha256": {
+    "Skills.txt": "ae56cbdcfdd0e98633467eb30ca46020c6c118b737bbbe6ef570e2e1e888d96c",
+    "Weapons.txt": "a62716b22aae91f86a79f60955a08705288df521cb17b00d622f05961446e9ae",
+    "ItemStatCost.txt": "d6230a83a38d9f24fa9e7803d0f0695a9b298689cf418db3cabb3e168055063f"
+  },
+  "skill_rows": {
+    "140": {
+      "skill": "Double Throw",
+      "Id": "140",
+      "seqnum": "15",
+      "calc1": "ln12 + (skill('Double Swing'.blvl) + skill('Frenzy'.blvl))*par8",
+      "calc2": "min(par5 + lvl / par6, 8)",
+      "calc3": "par4",
+      "Param1": "45",
+      "Param2": "8",
+      "Param3": "15",
+      "Param4": "0",
+      "Param5": "3",
+      "Param6": "3",
+      "Param8": "6",
+      "SrcDam": "128"
+    },
+    "135": {
+      "skill": "Throwing Mastery",
+      "Id": "135",
+      "passivecalc1": "ln12",
+      "passivecalc2": "ln34",
+      "passivecalc3": "dm56",
+      "passivecalc4": "edln",
+      "Param1": "30",
+      "Param2": "10",
+      "Param3": "30",
+      "Param4": "5",
+      "Param5": "0",
+      "Param6": "35"
+    },
+    "368": {
+      "skill": "Deep Wounds",
+      "Id": "368",
+      "passivecalc1": "edmx",
+      "passivecalc2": "par1 + (par2 * lvl / 2)",
+      "Param1": "5",
+      "Param2": "1",
+      "Param8": "4"
+    },
+    "155": {
+      "skill": "Battle Command",
+      "Id": "155",
+      "aurastatcalc1": "1+blvl/10",
+      "aurastatcalc2": "ln34",
+      "Param1": "125",
+      "Param2": "250",
+      "Param3": "20",
+      "Param4": "3",
+      "Param8": "125"
+    },
+    "147": {
+      "skill": "Frenzy",
+      "Id": "147",
+      "aurastatcalc1": "edln",
+      "aurastatcalc2": "dm56",
+      "seqnum": "11",
+      "calc1": "ln12+(skill('Double Swing'.blvl) + skill('Stun'.blvl))*par8",
+      "calc2": "dm34",
+      "calc4": "5",
+      "Param1": "25",
+      "Param2": "25",
+      "Param3": "0",
+      "Param4": "45",
+      "Param5": "0",
+      "Param6": "50",
+      "Param7": "375",
+      "Param8": "20",
+      "SrcDam": "128"
+    },
+    "148": {
+      "skill": "Increased Speed",
+      "Id": "148",
+      "passivecalc1": "dm12",
+      "passivecalc2": "blvl * 2",
+      "Param1": "7",
+      "Param2": "50"
+    },
+    "122": {
+      "skill": "Fanaticism",
+      "Id": "122",
+      "aurastatcalc1": "dm34",
+      "aurastatcalc2": "toht",
+      "aurastatcalc3": "ln56/2",
+      "passivecalc1": "ln56",
+      "Param1": "20",
+      "Param2": "3",
+      "Param3": "10",
+      "Param4": "40",
+      "Param5": "50",
+      "Param6": "15"
+    },
+    "98": {
+      "skill": "Might",
+      "Id": "98",
+      "aurastatcalc1": "edmn / 2",
+      "passivecalc1": "edmn",
+      "Param1": "20",
+      "Param2": "3"
+    },
+    "113": {
+      "skill": "Concentration",
+      "Id": "113",
+      "aurastatcalc1": "ln34 / 2",
+      "aurastatcalc2": "par5+(lvl / 3)",
+      "aurastatcalc3": "toht",
+      "passivecalc1": "ln34",
+      "Param1": "20",
+      "Param2": "3",
+      "Param3": "60",
+      "Param4": "15",
+      "Param5": "15",
+      "Param6": "0"
+    },
+    "66": {
+      "skill": "AmpDmg",
+      "Id": "66",
+      "aurastatcalc1": "-(par5 + par6*lvl + (skill('CurMas'.blvl)/2))",
+      "Param1": "9",
+      "Param2": "1",
+      "Param3": "150",
+      "Param4": "5",
+      "Param5": "14",
+      "Param6": "1"
+    },
+    "146": {
+      "skill": "Battle Cry",
+      "Id": "146",
+      "aurastatcalc1": "-\"min(ln34, 30)\"",
+      "aurastatcalc2": "-(par5+(lvl<22)?lvl:(22+((lvl-22)/2)))",
+      "Param1": "300",
+      "Param2": "0",
+      "Param3": "15",
+      "Param4": "1",
+      "Param5": "4"
+    },
+    "442": {
+      "skill": "AmpDmg Proc",
+      "Id": "442",
+      "aurastatcalc1": "-(par5 + par6*lvl)",
+      "Param1": "14",
+      "Param2": "1",
+      "Param3": "150",
+      "Param4": "5",
+      "Param5": "14",
+      "Param6": "1"
+    }
+  }
+}
