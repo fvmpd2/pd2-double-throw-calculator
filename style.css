@@ -3,3 +3,5 @@
 .fields>.check>input{margin:0}.fields>.check{align-self:center}.result-head .check{white-space:nowrap}
 
 #playstyleRows tr:nth-child(2) td:not(:first-child){color:var(--gold);font-weight:700;font-size:14px}
+
+.fields>label:has(input[name="buildName"]){grid-column:1/-1}#buildLabel{margin:7px 0}

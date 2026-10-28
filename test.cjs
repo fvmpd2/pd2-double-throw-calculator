@@ -5,6 +5,7 @@ let a=E.calculate(base);approx(a.hands.a.damage(1).after,145);approx(a.hands.b.d
 const local=E.calculate({...base,aDs:100});approx(local.hands.b.damage(1).after,a.hands.b.damage(1).after);assert(local.hands.a.damage(1).after>a.hands.a.damage(1).after);
 const s=E.strike(75,30,0,0,0);approx(s.chance,.825);approx(s.multiplier,1.7875);assert.equal(E.strike(0,100,0,0,0).cap,75);approx(E.strike(0,100,25,0,25).multiplier,1.75);
 const eth=E.calculate({...base,aMode:'base',aBase:'7bk',aEth:true,aEd:200});assert.equal(eth.hands.a.localMin,102);assert.equal(eth.hands.a.localMax,174);
+const levelDamage=E.calculate({...base,aMode:'base',aMaxPerLevel:.5,clvl:87});const noLevelDamage=E.calculate({...base,aMode:'base',clvl:87});approx(levelDamage.hands.a.localMax-noLevelDamage.hands.a.localMax,43);
 const ethShown=E.calculate({...base,aEth:true});assert.equal(ethShown.hands.a.localMin,100);
 const zeroOW=E.calculate({...base,window:10});assert.equal(zeroOW.bleed.total,0);
 const ow=E.calculate({...base,ow:100,window:10});assert.equal(ow.bleed.stacks,3);approx(ow.bleed.endDps,3*ow.hands.a.bleedPerFrame*25);assert(ow.bleed.averageDps<ow.bleed.endDps);
