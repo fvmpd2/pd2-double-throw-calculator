@@ -1,0 +1,12 @@
+/* Shared PD2 Damage Calculator palette and calculator navigation. */
+:root{color-scheme:dark;--bg:#080606;--panel:#17100e;--border:#6b2b1a;--edge:#6b2b1a;--line:#6b2b1a;--input:#0b0807;--text:#ebd3ba;--muted:#baa18d;--orange:#ff9b43;--accent:#ff9b43;--gold:#ffda9e}
+body{color:var(--text);background:radial-gradient(ellipse at 50% -15%,#692211 0%,#24100b 28%,#080606 65%);background-attachment:fixed}
+h1{color:#ffc36c;text-shadow:0 0 15px #fc4a1c66,0 2px 3px #000}h2,h3,summary,a{color:#ffa24c}
+.panel,.card,section.results{background:linear-gradient(135deg,#24140f,#100c0b 65%);border-color:#6b2b1a;box-shadow:inset 0 1px 0 #f5762720,0 3px 12px #0008}
+input,select,textarea{background:#0b0807;border-color:#793d26;color:#ebd3ba}input:focus,select:focus,textarea:focus{outline-color:#ff8b39;box-shadow:0 0 8px #ff4f1b33}input[type=checkbox],input[type=radio]{accent-color:#ff9b43}
+button{background:linear-gradient(#ad3d18,#6c1c0d);border-color:#e17636;color:#ffe4bc}button.secondary{background:linear-gradient(#34201a,#1b100d);border-color:#8e442c}
+p,small,.muted{color:var(--muted)}td strong,.result{color:#ffda9e}th{color:var(--muted)}td,th{border-color:var(--border)}tr.selected{background:#3a2015}
+.calculator-nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;margin:0 auto 18px;padding:10px 0;border-bottom:1px solid #6b2b1a;font:13px/1.4 system-ui,-apple-system,sans-serif;letter-spacing:0;text-align:center}
+.calculator-nav a{display:block;white-space:nowrap;padding:8px 11px;border:1px solid #793d26;border-radius:5px;background:#100b09;color:#dcbda2;text-decoration:none;font-weight:500;min-height:36px;box-sizing:border-box}
+.calculator-nav a:hover{background:#3a1b10;color:#ffe4bc;border-color:#e17636}.calculator-nav a[aria-current=page]{color:#ffe4bc;background:#542113;border-color:#d66a32}.calculator-nav a:focus-visible{outline:2px solid #ff9b43;outline-offset:2px}
+@media(max-width:600px){body{background-attachment:scroll}.calculator-nav{justify-content:flex-start;gap:5px}.calculator-nav a{font-size:12px;padding:9px;min-height:40px}}
